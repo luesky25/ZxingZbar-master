@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.google.zxing.client.android"
+        minSdkVersion 16
+        targetSdkVersion 28
+    }
+
+
+    signingConfigs{
+        releaseSign{
+            keyAlias 'zybi'
+            keyPassword '222222'
+            storeFile file('/juanMerchant.jks')
+            storePassword '123456'
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.releaseSign
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    dependencies {
+//        compile fileTree(include: ['*.jar'], dir: 'libs')
+//        api project(path:':android')
+        api project(path:':androidcore')
+        implementation 'androidx.appcompat:appcompat:1.1.0'
+        implementation "androidx.multidex:multidex:2.0.1"
+        implementation 'pub.devrel:easypermissions:3.0.0'
+    }
+}
