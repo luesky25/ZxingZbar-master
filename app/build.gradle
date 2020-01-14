@@ -8,6 +8,12 @@ android {
         applicationId "com.google.zxing.client.android"
         minSdkVersion 16
         targetSdkVersion 28
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters  'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
     }
 
 
@@ -47,6 +53,7 @@ android {
 //        compile fileTree(include: ['*.jar'], dir: 'libs')
 //        api project(path:':android')
         api project(path:':androidcore')
+        api project(path:':processImg')
         implementation 'androidx.appcompat:appcompat:1.1.0'
         implementation "androidx.multidex:multidex:2.0.1"
         implementation 'pub.devrel:easypermissions:3.0.0'

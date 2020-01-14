@@ -33,6 +33,7 @@ import com.google.zxing.MultiFormatReader;
 import com.google.zxing.PlanarYUVLuminanceSource;
 import com.google.zxing.ReaderException;
 import com.google.zxing.Result;
+import com.google.zxing.client.android.decode.DecodeCore;
 import com.google.zxing.common.HybridBinarizer;
 
 import net.sourceforge.zbar.Image;
@@ -50,12 +51,15 @@ final class DecodeHandler extends Handler {
     private final CaptureActivity activity;
     private final MultiFormatReader multiFormatReader;
     private boolean running = true;
+    private DecodeCore decodeCore;
 
     DecodeHandler(CaptureActivity activity, Map<DecodeHintType, Object> hints) {
         multiFormatReader = new MultiFormatReader();
         multiFormatReader.setHints(hints);
+        decodeCore = new DecodeCore(hints);
         this.activity = activity;
     }
+
 
     @Override
     public void handleMessage(Message message) {
@@ -72,6 +76,23 @@ final class DecodeHandler extends Handler {
                 break;
         }
     }
+
+//    private void decode1(byte[] data, int width, int height) {
+//        Result result = decodeCore.decode(data, width, height, activity.getCropRect(), true);
+//        Handler handler = activity.getHandler();
+//        if (result != null) {
+//            // Don't log the barcode contents for security.
+//            if (handler != null) {
+//                Message message = Message.obtain(handler, R.id.decode_succeeded, result);
+//                message.sendToTarget();
+//            }
+//        } else {
+//            if (handler != null) {
+//                Message message = Message.obtain(handler, R.id.decode_failed);
+//                message.sendToTarget();
+//            }
+//        }
+//    }
 
     /**
      * Decode the data within the viewfinder rectangle, and time how long it took. For efficiency,
@@ -118,8 +139,11 @@ final class DecodeHandler extends Handler {
             if (source != null) {
                 BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
                 try {
+
+//                    Rect rect = activity.getCameraManager().getFramingRectInPreview();
                     rawResult = multiFormatReader.decodeWithState(bitmap);
-                } catch (ReaderException re) {
+//                    rawResult = decodeCore.decode(data,width,height,rect,true);
+                } catch (Exception re) {
                     // continue
                 } finally {
                     multiFormatReader.reset();

@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master",
+      "sdkFolder": "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\build\\intermediates",
+      "gradleModulePathName": ":processImg",
+      "moduleRootFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg",
+      "makeFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\.cxx",
+      "cxxFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx",
+      "ndkFolder": "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "debug",
+    "soFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64",
+  "jsonFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+  "buildCommandFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\build_generation_state.json",
+    "cacheKeyFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cxx\\debug\\x86_64\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\debug\\x86_64\\compile_commands.json"
+}

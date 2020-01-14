@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Xiaomi/zixing_source_code/ZxingZbar-master/processImg/.cxx/cmake/debug/x86_64",
+  "command": "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Gigabyte/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Gigabyte/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DProcessImg_EXPORTS -ID:/Xiaomi/zixing_source_code/ZxingZbar-master/processImg/src/main/cpp/../../../../../opecv_official/OpenCV-android-sdk/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -fexceptions -frtti -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\ProcessImg.dir\\image_pre_process1.cpp.o -c D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\image_pre_process1.cpp",
+  "file": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\image_pre_process1.cpp"
+}
+]

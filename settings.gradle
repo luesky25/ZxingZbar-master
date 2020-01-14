@@ -1,1 +1,8 @@
+
+def opencvsdk='../../opencv_demo/opecv_official/OpenCV-android-sdk'
+//def opencvsdk='/<path to OpenCV-android-sdk>'
+//println opencvsdk
+include ':opencv', ':processImg'
+project(':opencv').projectDir = new File(opencvsdk + '/sdk')
+
 include ':app', ':androidcore'

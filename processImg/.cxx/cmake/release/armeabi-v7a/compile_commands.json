@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Xiaomi/zixing_source_code/ZxingZbar-master/processImg/.cxx/cmake/release/armeabi-v7a",
+  "command": "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/Gigabyte/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Gigabyte/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DProcessImg_EXPORTS -ID:/Xiaomi/zixing_source_code/ZxingZbar-master/processImg/src/main/cpp/../../../../../opecv_official/OpenCV-android-sdk/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Oz -DNDEBUG  -fPIC   -o CMakeFiles\\ProcessImg.dir\\image_pre_process.cpp.o -c D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\image_pre_process.cpp",
+  "file": "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\image_pre_process.cpp"
+}
+]

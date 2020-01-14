@@ -1,0 +1,12 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Gigabyte\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Xiaomi\\zixing_source_code\\ZxingZbar-master\\processImg\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {}
+}
