@@ -7,8 +7,11 @@ cmake_minimum_required(VERSION 3.4.1)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 #D:\Xiaomi\opencv_demo\opecv_official\OpenCV-android-sdk\sdk\native\jni\include\opencv2
-set(libs "../../../libs")
-include_directories(../../../../../opecv_official/OpenCV-android-sdk/sdk/native/jni/include)
+#set(libs "../../../libs")
+include_directories(../../../../../OpenCV-android-sdk/sdk/native/jni/include)
+#include(../../../../../OpenCV-android-sdk/sdk/native/jni/include/opencv2/imgproc.hpp
+#)
+#include opencv2\imgproc\imgproc.hpp
 
 
 # Creates and names a library, sets it as either STATIC
@@ -30,9 +33,9 @@ include_directories(../../../../../opecv_official/OpenCV-android-sdk/sdk/native/
 
 
 
-add_library(libopencv_java4 SHARED IMPORTED )
-set_target_properties(libopencv_java4 PROPERTIES
-         IMPORTED_LOCATION "../../../libs/${ANDROID_ABI}/libopencv_java4.so")
+#add_library(libopencv_java4 SHARED IMPORTED )
+#set_target_properties(libopencv_java4 PROPERTIES
+#         IMPORTED_LOCATION "../../../libs/${ANDROID_ABI}/libopencv_java4.so")
 
 add_library(libopencv_calib3d STATIC IMPORTED )
 set_target_properties(libopencv_calib3d PROPERTIES
@@ -133,13 +136,13 @@ find_library( # Sets the name of the path variable.
         # you want CMake to locate.
         log)
 
-target_link_libraries( # Specifies the target library.
-#        ProcessImg android log
-#        ${ProcessImg}
-        ${libopencv_java4}  ${libopencv_calib3d} ${libopencv_core} ${libopencv_features2d} ${libopencv_flann} ${libopencv_highgui} ${libopencv_imgcodecs}
-        ${libopencv_imgproc} ${libopencv_ml} ${libopencv_objdetect} ${libopencv_photo} ${libopencv_shape} ${libopencv_stitching} ${libopencv_superres}
-        ${libopencv_video} ${libopencv_videoio} ${libopencv_videostab}
-        # Links the target library to the log library
-        # included in the NDK.
-
-     #[[   ${log-lib}]] )
+#target_link_libraries( # Specifies the target library.
+##        ProcessImg android log
+##        ${ProcessImg}
+#        ${libopencv_java4}  ${libopencv_calib3d} ${libopencv_core} ${libopencv_features2d} ${libopencv_flann} ${libopencv_highgui} ${libopencv_imgcodecs}
+#        ${libopencv_imgproc} ${libopencv_ml} ${libopencv_objdetect} ${libopencv_photo} ${libopencv_shape} ${libopencv_stitching} ${libopencv_superres}
+#        ${libopencv_video} ${libopencv_videoio} ${libopencv_videostab}
+#        # Links the target library to the log library
+#        # included in the NDK.
+#
+#     #[[   ${log-lib}]] )
