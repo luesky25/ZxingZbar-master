@@ -57,5 +57,7 @@ android {
         implementation 'androidx.appcompat:appcompat:1.1.0'
         implementation "androidx.multidex:multidex:2.0.1"
         implementation 'pub.devrel:easypermissions:3.0.0'
+
+        implementation "androidx.multidex:multidex:1.0.3"
     }
 }
